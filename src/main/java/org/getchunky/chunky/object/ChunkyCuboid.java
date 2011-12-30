@@ -1,4 +1,4 @@
-package org.getchunky.chunkyimpl.object;
+package org.getchunky.chunky.object;
 
 import org.bukkit.util.BlockVector;
 import org.bukkit.util.Vector;
@@ -81,9 +81,9 @@ public class ChunkyCuboid extends AbstractChunkyVolume {
         final double x = pt.getX();
         final double y = pt.getY();
         final double z = pt.getZ();
-        return x >= this.getMinimumPoint().getBlockX() && x < this.getMaximumPoint().getBlockX()+1
-                && y >= this.getMinimumPoint().getBlockY() && y < this.getMaximumPoint().getBlockY()+1
-                && z >= this.getMinimumPoint().getBlockZ() && z < this.getMaximumPoint().getBlockZ()+1;
+        return x >= this.getMinimumPoint().getBlockX() && x < this.getMaximumPoint().getBlockX() + 1
+                && y >= this.getMinimumPoint().getBlockY() && y < this.getMaximumPoint().getBlockY() + 1
+                && z >= this.getMinimumPoint().getBlockZ() && z < this.getMaximumPoint().getBlockZ() + 1;
     }
 
 

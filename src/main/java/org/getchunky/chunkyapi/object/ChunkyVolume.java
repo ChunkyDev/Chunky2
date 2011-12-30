@@ -3,8 +3,10 @@ package org.getchunky.chunkyapi.object;
 import org.bukkit.util.BlockVector;
 import org.bukkit.util.Vector;
 
+import javax.persistence.MappedSuperclass;
 import java.util.List;
 
+@MappedSuperclass
 public interface ChunkyVolume extends Comparable<ChunkyVolume>, ChunkyIdentity {
 
     /**

@@ -1,6 +1,6 @@
-package org.getchunky.chunkyimpl.persistence;
+package org.getchunky.chunky.persistence;
 
-import org.getchunky.chunkyapi.persistence.PersistanceInterface;
+import org.getchunky.chunkyapi.persistence.PersistableInterface;
 
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
@@ -8,13 +8,14 @@ import javax.persistence.Version;
 import java.sql.Timestamp;
 
 @MappedSuperclass
-public class ChunkyPersistable implements PersistanceInterface {
+public class ChunkyPersistable implements PersistableInterface {
 
     @Id
     Integer id;
 
     @Version
     Timestamp lastUpdate;
+
 
     public Integer getId() {
         return id;

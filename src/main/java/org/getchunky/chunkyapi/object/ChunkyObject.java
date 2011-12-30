@@ -1,7 +1,8 @@
 package org.getchunky.chunkyapi.object;
 
-import org.getchunky.chunkyapi.persistence.PersistanceInterface;
+import javax.persistence.Entity;
 
-public interface ChunkyObject extends PersistanceInterface, ChunkyIdentity, ChunkyFlagged {
+@Entity
+public interface ChunkyObject extends ChunkyIdentity, ChunkyFlagged {
 
 }

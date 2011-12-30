@@ -1,4 +1,4 @@
-package org.getchunky.chunkyimpl.object;
+package org.getchunky.chunky.object;
 
 import org.bukkit.Chunk;
 import org.bukkit.util.BlockVector;

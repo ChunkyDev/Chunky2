@@ -3,11 +3,11 @@ package org.getchunky.chunkyapi.object;
 import org.bukkit.util.BlockVector;
 import org.bukkit.util.Vector;
 
-import javax.persistence.MappedSuperclass;
+import javax.persistence.Entity;
 import java.awt.geom.Line2D;
 import java.util.List;
 
-@MappedSuperclass
+@Entity
 public abstract class AbstractChunkyVolume extends AbstractChunkyObject implements ChunkyVolume {
 
     private BlockVector min;
@@ -97,7 +97,7 @@ public abstract class AbstractChunkyVolume extends AbstractChunkyObject implemen
         List<BlockVector> pts2 = volume.getPoints();
         BlockVector lastPt1 = pts1.get(pts1.size() - 1);
         BlockVector lastPt2 = pts2.get(pts2.size() - 1);
-        for (int i = 0; i < pts1.size(); i++ ) {
+        for (int i = 0; i < pts1.size(); i++) {
             for (int j = 0; j < pts2.size(); j++) {
 
                 Line2D line1 = new Line2D.Double(

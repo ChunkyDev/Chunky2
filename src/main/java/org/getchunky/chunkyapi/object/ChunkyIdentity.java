@@ -1,11 +1,11 @@
 package org.getchunky.chunkyapi.object;
 
-import org.getchunky.chunkyapi.persistence.PersistanceInterface;
+import org.getchunky.chunkyapi.persistence.PersistableInterface;
 
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public interface ChunkyIdentity extends PersistanceInterface {
+public interface ChunkyIdentity extends PersistableInterface {
 
     public String getName();
 

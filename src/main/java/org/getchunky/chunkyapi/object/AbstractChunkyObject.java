@@ -1,10 +1,10 @@
 package org.getchunky.chunkyapi.object;
 
-import org.getchunky.chunkyimpl.persistence.ChunkyPersistable;
+import org.getchunky.chunky.persistence.ChunkyPersistable;
 
-import javax.persistence.MappedSuperclass;
+import javax.persistence.Entity;
 
-@MappedSuperclass
+@Entity
 public abstract class AbstractChunkyObject extends ChunkyPersistable implements ChunkyObject {
 
     String name;

@@ -4,7 +4,7 @@ import javax.persistence.MappedSuperclass;
 import java.sql.Timestamp;
 
 @MappedSuperclass
-public interface PersistanceInterface {
+public interface PersistableInterface {
 
     public Integer getId();
 
